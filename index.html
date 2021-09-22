@@ -1,273 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Shopee</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Shopee</title>
 
 
-    <!--Bootstrap CDN-->
-  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-   <!--owl-carousel CDN-->
+  <!-- Owl-carousel CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
 
-   <!--font awesome icons-->
+  <!-- Custom CSS file -->
+  <link rel="stylesheet" href="style.css">
 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
 </head>
+
 <body>
 
-    <!-- start #header section-->
-        <header id="header">
-            <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
-                <p class="font-rale font-size-12 text-black-50 m-0">Jordan Calderon 430-985 Eleifend St. Duluth Washington 92611 (427) 930-5255</p>
-                <div class="font-rale font-size-14">
-                    <a href="#" class="px-3 border-right border-left text-dark">Login</a>
-                    <a href="#" class="px-3 border-right text-dark">Whishlist (0)</a>
+  <!-- start #header section-->
+  <header id="header">
+    <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
+      <p class="font-rale font-size-16 text-black-50 m-0">joy adhikary 18192103062</p>
+      <div class="font-rale font-size-14">
+        <a href="#" class="px-3 border-right border-left text-dark">Login</a>
+        <a href="#" class="px-3 border-right text-dark">Whishlist (0)</a>
+      </div>
+    </div>
+
+    <!-- Primary Navigation form bootstrape-->
+    <nav class="navbar navbar-expand-lg navbar-dark color-second-bg">
+      <a class="navbar-brand" href="#">JOY Store </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-auto font-rubik">
+          <!-- nav bar ar margin jate space pai -->
+          <li class="nav-item active">
+            <a class="nav-link" href="#">On Sale</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Category</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products <i class="fas fa-chevron-down"></i></a> <!-- fas fa for ^ icone-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Category <i class="fas fa-chevron-down"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cooming soon</a>
+          </li>
+        </ul>
+        <!-- curt and shopping icone -->
+        <form action="#" class="font-size-14 font-rale">
+          <a href="#" class="py-2 rounded-pill color-primary-bg">
+            <!-- py top and bouttom pading px left and right pading -->
+            <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+            <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+          </a>
+        </form>
+      </div>
+    </nav>
+    <!-- !Primary Navigation -->
+
+  </header>
+  <!-- end #header section -->
+
+  <!--start #main-site-->
+  <main id="main-site">
+
+    <!--Owl-carousel for bannaer -->
+    <!-- it will produce slide effects-->
+    <section id="banner-area">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="./assets/Banner1.png" alt="Banner1">
+        </div>
+        <div class="item">
+          <img src="./assets/Banner2.png" alt="Banner2">
+        </div>
+        <div class="item">
+          <img src="./assets/Banner1.png" alt="Banner3">
+        </div>
+      </div>
+    </section>
+    <!--!Owl-carousel-->
+
+
+    <!--Top Sale-->
+    <section id="top-sale">
+      <div class="container py-5">
+        <h4 class="font-rubik font-size-20">Most sold items </h4>
+        <hr>
+        <!--Owl carousel-->
+        <div class="owl-carousel owl-theme">
+          <div class="item py-2">
+            <div class="product font-rale">
+              <a href="#"><img src="./assets/products/1.png" alt="product1" class="img-fluid"></a>
+              <!-- img fluid for responsive pic -->
+              <div class="text-center">
+                <!-- center all the text -->
+                <h6>Samsung Galaxy 10</h6> <!-- name of the product -->
+                <div class="rating text-warning font-size-12">
+                  <!-- * -->
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="far fa-star"></i></span>
                 </div>
+                <div class="price py-2">
+                  <span>15000 taka</span>
+                </div>
+                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+              </div>
             </div>
-
-            <!-- Primary Navigation form bootstrape-->
-            <nav class="navbar navbar-expand-lg navbar-dark color-second-bg">
-                <a class="navbar-brand" href="#">Mobile Shopee</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav m-auto font-rubik"><!-- nav bar ar margin jate space pai -->
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">On Sale</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Category</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Products <i class="fas fa-chevron-down"></i></a> <!-- fas fa for ^ icone-->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Category <i class="fas fa-chevron-down"></i></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Cooming soon</a>
-                      </li>
-                  </ul>
-                  <!-- curt and shopping icone -->
-                  <form action="#" class="font-size-14 font-rale">
-                      <a href="#" class="py-2 rounded-pill color-primary-bg"><!-- py top and bouttom pading px left and right pading -->
-                        <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
-                        <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
-                      </a>
-                  </form>
-                </div>
-              </nav>
-               <!-- !Primary Navigation -->
-
-        </header>
-    <!-- end #header section -->
-           
-
-    <!-- start  #main section -->
-    <main id="main-site">
-
-      <!-- Owl-carousel -->
-        <section id="banner-area">    <!--  for Owl-carousel banner effect (total banner area) -->
-          <div class="owl-carousel owl-theme">
-              <div class="item">
-                <img src="../assets/Banner1.png" alt="Banner1">  <!-- banner 1 -->
-              </div>
-              <div class="item">
-                <img src="../assets/Banner2.png" alt="Banner2">
-              </div>
-              <div class="item">
-                <img src="../assets/Banner1.png" alt="Banner3">
-              </div>
           </div>
-        </section> 
-         <!-- !Owl-carousel -->
+          <div class="item py-2">
+            <div class="product font-rale">
+              <a href="#"><img src="./assets/products/2.png" alt="product1" class="img-fluid"></a>
+              <div class="text-center">
+                <h6>Redmi Note 7 pro</h6>
+                <div class="rating text-warning font-size-12">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="far fa-star"></i></span>
+                </div>
+                <div class="price py-2">
+                  <span>17500 taka</span>
+                </div>
+                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="item py-2">
+            <div class="product font-rale">
+              <a href="#"><img src="./assets/products/3.png" alt="product1" class="img-fluid"></a>
+              <div class="text-center">
+                <h6>Redmi Note 9 pro</h6>
+                <div class="rating text-warning font-size-12">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="far fa-star"></i></span>
+                </div>
+                <div class="price py-2">
+                  <span>20000 taka</span>
+                </div>
+                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="item py-2">
+            <div class="product font-rale">
+              <a href="#"><img src="./assets/products/1.png" alt="product1" class="img-fluid"></a>
+              <div class="text-center">
+                <h6>Samsung Galaxy 10s</h6>
+                <div class="rating text-warning font-size-12">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="far fa-star"></i></span>
+                </div>
+                <div class="price py-2">
+                  <span>13152 taka</span>
+                </div>
+                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="item py-2">
+            <div class="product font-rale">
+              <a href="#"><img src="./assets/products/2.png" alt="product1" class="img-fluid"></a>
+              <div class="text-center">
+                <h6>Redmi Note 7s</h6>
+                <div class="rating text-warning font-size-12">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="far fa-star"></i></span>
+                </div>
+                <div class="price py-2">
+                  <span>15870 taka</span>
+                </div>
+                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                <!--text button for scrool   -->
+              </div>
+            </div>
+          </div>
+          <div class="item py-2">
+            <div class="product font-rale">
+              <a href="#"><img src="./assets/products/1.png" alt="product1" class="img-fluid"></a>
+              <div class="text-center">
+                <h6>Samsung note 10</h6>
+                <div class="rating text-warning font-size-12">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="far fa-star"></i></span>
+                </div>
+                <div class="price py-2">
+                  <span>15200 taka</span>
+                </div>
+                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="item py-2">
+            <div class="product font-rale">
+              <a href="#"><img src="./assets/products/2.png" alt="product1" class="img-fluid"></a>
+              <div class="text-center">
+                <h6>Redmi Note 8</h6>
+                <div class="rating text-warning font-size-12">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="far fa-star"></i></span>
+                </div>
+                <div class="price py-2">
+                  <span>15288 taka </span>
+                </div>
+                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-         
-          <!-- Top Sale -->
-          <section id="top-sale">
-            <div class="container py-5">
-              <h4 class="font-rubik font-size-20">Top Sale</h4>
-              <hr>
-              <!-- owl carousel -->
-                <div class="owl-carousel owl-theme">
-                  <div class="item py-2">
-                    <div class="product font-rale">
-                      <a href="#"><img src="../assets/products/1.png" alt="product1" class="img-fluid"></a>
-                      <div class="text-center">
-                        <h6>Samsung Galaxy 10</h6>
-                        <div class="rating text-warning font-size-12">
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="far fa-star"></i></span>
-                        </div>
-                        <div class="price py-2">
-                          <span>$152</span>
-                        </div>
-                        <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
-                      </div>
-                    </div>
+
+    </section>
+    <!-- Top Sale ended -->
+
+    <!--Special Price-->
+    <section id="special-price">
+      <div class="container">
+        <h4 class="font-rubik font-size-20">Offer price</h4>
+        <div id="filters" class="button-group text-right font-baloo font-size-14">
+          <!-- bootstrap command for group buttons in right-->
+          <button class="btn is-checked" data-filter="*">All Brand</button>
+          <button class="btn" data-filter=".Apple">Apple</button>
+          <button class="btn" data-filter=".Samsung">Samsung</button>
+          <button class="btn" data-filter=".Redmi">Redmi</button>
+        </div>
+
+        <div class="grid">
+          <!-- filter only appale .. its work like a class .. if we send a then it sort only a -->
+          <div class="grid-item Apple border">
+            <div class="item py-2" style="width: 200px;">
+              <div class="product font-rale">
+                <a href="#"><img src="../assets/products/13.png" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Apple iPhone 10</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
                   </div>
-                  <div class="item py-2">
-                    <div class="product font-rale">
-                      <a href="#"><img src="../assets/products/2.png" alt="product1" class="img-fluid"></a>
-                      <div class="text-center">
-                        <h6>Readme Note 7</h6>
-                        <div class="rating text-warning font-size-12">
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="far fa-star"></i></span>
-                        </div>
-                        <div class="price py-2">
-                          <span>$152</span>
-                        </div>
-                        <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
-                      </div>
-                    </div>
+                  <div class="price py-2">
+                    <span>110152 taka</span>
                   </div>
-                  <div class="item py-2">
-                    <div class="product font-rale">
-                      <a href="#"><img src="../assets/products/3.png" alt="product1" class="img-fluid"></a>
-                      <div class="text-center">
-                        <h6>Readme Note 7</h6>
-                        <div class="rating text-warning font-size-12">
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="far fa-star"></i></span>
-                        </div>
-                        <div class="price py-2">
-                          <span>$152</span>
-                        </div>
-                        <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
-                      </div>
-                    </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item Samsung border">
+            <div class="item py-2" style="width: 200px;">
+              <div class="product font-rale">
+                <a href="#"><img src="../assets/products/11.png" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Samsung Galaxy 10</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
                   </div>
-                  <div class="item py-2">
-                    <div class="product font-rale">
-                      <a href="#"><img src="../assets/products/6.png" alt="product1" class="img-fluid"></a>
-                      <div class="text-center">
-                        <h6>Samsung Galaxy 10</h6>
-                        <div class="rating text-warning font-size-12">
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="far fa-star"></i></span>
-                        </div>
-                        <div class="price py-2">
-                          <span>$152</span>
-                        </div>
-                        <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
-                      </div>
-                    </div>
+                  <div class="price py-2">
+                    <span>15299taka</span>
                   </div>
-                  <div class="item py-2">
-                    <div class="product font-rale">
-                      <a href="#"><img src="../assets/products/1.png" alt="product1" class="img-fluid"></a>
-                      <div class="text-center">
-                        <h6>Readme Note 7</h6>
-                        <div class="rating text-warning font-size-12">
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="fas fa-star"></i></span>
-                          <span><i class="far fa-star"></i></span>
-                        </div>
-                        <div class="price py-2">
-                          <span>$152</span>
-                        </div>
-                        <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
-                      </div>
-                    </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item Redmi border">
+            <div class="item py-2" style="width: 200px;">
+              <div class="product font-rale">
+                <a href="#"><img src="../assets/products/3.png" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Redmi Note 7 Pro</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
                   </div>
-                  <div class="item py-2">
-                    <div class="product font-rale">
-                      <div class="d-flex flex-column">
-                        <a href="#"><img src="../assets/products/1.png" class="img-fluid" alt="pro1"></a>
-                        <div class="text-center">
-                          <h6>Readme Note 7</h6>
-                          <div class="rating text-warning font-size-12">
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="far fa-star"></i></span>
-                          </div>
-                          <div class="price py-2">
-                            <span>$122</span>
-                          </div>
-                          <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="price py-2">
+                    <span>15002taka</span>
                   </div>
-                  <div class="item py-2">
-                    <div class="product font-rale">
-                      <div class="d-flex flex-column">
-                        <a href="#"><img src="../assets/products/2.png" class="img-fluid" alt="pro1"></a>
-                        <div class="text-center">
-                          <h6>Readme Note 7</h6>
-                          <div class="rating text-warning font-size-12">
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="far fa-star"></i></span>
-                          </div>
-                          <div class="price py-2">
-                            <span>$122</span>
-                          </div>
-                          <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
-                        </div>
-                      </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item Apple border">
+            <div class="item py-2" style="width: 200px;">
+              <div class="product font-rale">
+                <a href="#"><img src="../assets/products/14.png" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Apple iPhone 5s</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>39352 taka</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item Samsung border">
+            <div class="item py-2" style="width: 200px;">
+              <div class="product font-rale">
+                <a href="#"><img src="../assets/products/12.png" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Samsung Galaxy 11</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>12152 taka</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item  Redmi border ">
+            <div class="item py-2" style="width: 200px;">
+              <div class="product font-rale">
+                <div class="d-flex flex-column">
+                  <a href="#"><img src="../assets/products/4.png" class="img-fluid" alt="pro1"></a>
+                  <div class="text-center">
+                    <h6>Redmi Note 10 Pro</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
                     </div>
+                    <div class="price py-2">
+                      <span>19152 taka</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
                   </div>
                 </div>
-              <!-- !owl carousel -->
+              </div>
             </div>
-          </section>
-        <!-- !Top Sale -->
+          </div>
+          <div class="grid-item  Redmi border ">
+            <div class="item py-2" style="width: 200px;">
+              <div class="product font-rale">
+                <div class="d-flex flex-column">
+                  <a href="#"><img src="../assets/products/5.png" class="img-fluid" alt="pro1"></a>
+                  <div class="text-center">
+                    <h6>Redmi Note 9 Pro</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>23152 taka</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item  Redmi border ">
+            <div class="item py-2" style="width: 200px;">
+              <div class="product font-rale">
+                <div class="d-flex flex-column">
+                  <a href="#"><img src="../assets/products/6.png" class="img-fluid" alt="pro1"></a>
+                  <div class="text-center">
+                    <h6>Redmi Note 8 Pro</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>9991 taka</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item  Redmi border">
+            <div class="item py-2" style="width: 200px;">
+              <div class="product font-rale">
+                <div class="d-flex flex-column">
+                  <a href="#"><img src="../assets/products/10.png" class="img-fluid" alt="pro1"></a>
+                  <div class="text-center">
+                    <h6>Redmi Note 11 Pro</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>23352 taka</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item Apple border  ">
+            <div class="item py-2" style="width: 200px;">
+              <div class="product font-rale">
+                <div class="d-flex flex-column">
+                  <a href="#"><img src="../assets/products/13.png" class="img-fluid" alt="pro1"></a>
+                  <div class="text-center">
+                    <h6>Apple iPhone 10 max</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>152252 taka</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      </main>
-     <!-- end  #main section -->
-
-      <!-- start  #footer section -->
+    <!--!Special Price-->
 
 
+  </main>
+  <!--!start #main-site-->
 
-       <!-- end  #footer section -->
+  <!--start #footer-->
+  <footer>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
-
-     <!-- Custom CSS File -->
-<link rel="stylesheet" href="style.css">
+  </footer>
+  <!--start #footer-->
 
 
- <!-- Owl Carousel Js file -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
 
- <!-- Custom Javascript -->
- <script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+  <!--Owl carousel js file-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!--  isotope plugin cdn  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+    integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+
+
+  <!--Custom Javasript-->
+  <script src="./index.js"></script>
 </body>
+
 </html>
