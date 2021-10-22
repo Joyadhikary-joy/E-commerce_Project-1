@@ -38,21 +38,38 @@ $(document).ready(function(){
 
 
     // new phones owl carousel
-    $("#new-phones .owl-carousel").owlCarousel({
+    $("#new-phones .owl-carousel").owlCarousel({  // pass peramitar to it 
         loop: true,
-        nav: false,
+        nav: false, //for navigation button off
         dots: true,
-        responsive : {
-            0: {
+        responsive : {   // to make responsive 
+            0: {  //if window  view port has > 0
                 items: 1
             },
-            600: {
+            600: {          //if window has >600 plex
                 items: 3
             },
-            1000 : {
+            1000 : {     //if window has >1000 plex
                 items: 5
             }
         }
     });
+
+
+        // blogs owl carousel
+        $("#blogs .owl-carousel").owlCarousel({
+            loop: true,
+            nav: false,
+            dots: true,
+            responsive : {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3 // when view port is grater thn 600 thn we show 3 items  
+                }
+            }
+        })
+    
 
 });
