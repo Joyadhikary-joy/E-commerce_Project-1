@@ -71,5 +71,28 @@ $(document).ready(function(){
             }
         })
     
+          // product qty section
+    let $qty_up = $(".qty .qty-up");  // called (.)class qty-up 
+    let $qty_down = $(".qty .qty-down"); //  called (.)class qty-down
+    // let $input = $(".qty .qty_input");
 
+    // click on qty up button
+    $qty_up.click(function(e){  // click is jquery method , when click on it it exicute function as a peramiter e 
+        let $input = $(`.qty_input[data-id='${$(this).data("id")}']`);
+        if($input.val() >= 1 && $input.val() <= 9){ // if input >=1 and input <=9 , val() pick the valuse from input 
+            $input.val(function(i, oldval){ // update input box quantity , pass (i , oldval) as a argument i = current index , oldval =current value in the box 
+                return ++oldval; // increase value of input text box 
+            });
+        }
+    });
+
+       // click on qty down button
+       $qty_down.click(function(e){
+        let $input = $(`.qty_input[data-id='${$(this).data("id")}']`);
+            if($input.val() > 1 && $input.val() <= 10){
+            $input.val(function(i, oldval){
+                return --oldval; // decrease by 1 
+            });
+        }
+    });
 });
