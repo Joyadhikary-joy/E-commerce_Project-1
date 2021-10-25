@@ -75,10 +75,11 @@ $(document).ready(function(){
     let $qty_up = $(".qty .qty-up");  // called (.)class qty-up 
     let $qty_down = $(".qty .qty-down"); //  called (.)class qty-down
     // let $input = $(".qty .qty_input");
+     // aita use korb nah karon cart ar page a amra 2 ta product ar jonno quantity barai komai .. ajonno same kaj 2 bar kora lagbe .. tai amra funtion ar mto perameter pass korbo 
 
     // click on qty up button
     $qty_up.click(function(e){  // click is jquery method , when click on it it exicute function as a peramiter e 
-        let $input = $(`.qty_input[data-id='${$(this).data("id")}']`);
+        let $input = $(`.qty_input[data-id='${$(this).data("id")}']`); // jkn cart ar 2 ta product ar jonno call korbo tkn data-id= pro1 ar jonno 1 num ta barabe r data-id=pro2 dile 2 num ta barabe  
         if($input.val() >= 1 && $input.val() <= 9){ // if input >=1 and input <=9 , val() pick the valuse from input 
             $input.val(function(i, oldval){ // update input box quantity , pass (i , oldval) as a argument i = current index , oldval =current value in the box 
                 return ++oldval; // increase value of input text box 
