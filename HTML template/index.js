@@ -24,8 +24,8 @@ $(document).ready(function(){
         }
     });
 
-    // isotope filter
-    var $grid = $(".grid").isotope({
+      // isotope filter
+      var $grid = $(".grid").isotope({
         itemSelector : '.grid-item',
         layoutMode : 'fitRows'
     });
@@ -56,26 +56,26 @@ $(document).ready(function(){
     });
 
 
-    // blogs owl carousel
-    $("#blogs .owl-carousel").owlCarousel({
-        loop: true,
-        nav: false,
-        dots: true,
-        responsive : {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3 // when view port is grater thn 600 thn we show 3 items
+        // blogs owl carousel
+        $("#blogs .owl-carousel").owlCarousel({
+            loop: true,
+            nav: false,
+            dots: true,
+            responsive : {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3 // when view port is grater thn 600 thn we show 3 items  
+                }
             }
-        }
-    })
-
-    // product qty section
+        })
+    
+          // product qty section
     let $qty_up = $(".qty .qty-up");  // called (.)class qty-up 
     let $qty_down = $(".qty .qty-down"); //  called (.)class qty-down
     // let $input = $(".qty .qty_input");
-    // aita use korb nah karon cart ar page a amra 2 ta product ar jonno quantity barai komai .. ajonno same kaj 2 bar kora lagbe .. tai amra funtion ar mto perameter pass korbo
+     // aita use korb nah karon cart ar page a amra 2 ta product ar jonno quantity barai komai .. ajonno same kaj 2 bar kora lagbe .. tai amra funtion ar mto perameter pass korbo 
 
     // click on qty up button
     $qty_up.click(function(e){  // click is jquery method , when click on it it exicute function as a peramiter e 
@@ -87,10 +87,10 @@ $(document).ready(function(){
         }
     });
 
-    // click on qty down button
-    $qty_down.click(function(e){
+       // click on qty down button
+       $qty_down.click(function(e){
         let $input = $(`.qty_input[data-id='${$(this).data("id")}']`);
-        if($input.val() > 1 && $input.val() <= 10){
+            if($input.val() > 1 && $input.val() <= 10){
             $input.val(function(i, oldval){
                 return --oldval; // decrease by 1 
             });
