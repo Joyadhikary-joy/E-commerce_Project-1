@@ -4,7 +4,6 @@ $brand = array_map(function ($pro){ return $pro['item_brand']; }, $product_shuff
 $unique = array_unique($brand); /* for storing unique brand */
 sort($unique); /* sort for sorting brand array */
 shuffle($product_shuffle);
-/*
 // request method post
 if($_SERVER['REQUEST_METHOD'] == "POST"){
     if (isset($_POST['special_price_submit'])){
@@ -14,7 +13,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 }
 
 $in_cart = $Cart->getCartId($product->getData('cart'));
-*/
 ?>
 <section id="special-price">
     <div class="container">
@@ -53,7 +51,7 @@ $in_cart = $Cart->getCartId($product->getData('cart'));
                                     if (in_array($item['item_id'], $in_cart ?? [])){
                                         echo '<button type="submit" disabled class="btn btn-success font-size-12">In the Cart</button>';
                                     }else{
-                                        echo '<button type="submit" name="top_sale_submit" class="btn btn-warning font-size-12">Add to Cart</button>';
+                                        echo '<button type="submit" name="special_price_submit" class="btn btn-warning font-size-12">Add to Cart</button>';
                                     }
                                     ?>
                                 </form>

@@ -7,10 +7,10 @@
    shuffle($product_shuffle);
 
 // request method post
-    if($_SERVER['REQUEST_METHOD'] == "POST"){
-    if (isset($_POST['top_sale_submit'])){
+    if($_SERVER['REQUEST_METHOD'] == "POST"){ // aita request method ke call korbe ( jodi amra add to cart buttuon a press kori tkn
+    if (isset($_POST['top_sale_submit'])){ // only for top sale button
         // call method addToCart
-        $Cart->addToCart($_POST['user_id'], $_POST['item_id']);
+        $Cart->addToCart($_POST['user_id'], $_POST['item_id']); // cart a userid r itemid store korbo , post buttun name
     }
 }
 ?>
@@ -37,13 +37,13 @@
                                 <span>$<?php echo $item['item_price'] ?? '0' ; ?></span> <!-- aitai o akta price print na kore, database theke iteam_price  ar maddome call kore database theke price pass korty parbo ,defalult 0 -->
                             </div>
                             <form method="post">
-                                <input type="hidden" name="item_id" value="<?php echo $item['item_id'] ?? '1'; ?>">
-                                <input type="hidden" name="user_id" value="<?php echo 1; ?>">
+                                <input type="hidden" name="item_id" value="<?php echo $item['item_id'] ?? '1'; ?>"> <!--input data show korbo nah tai hidden,, upr theke item id pabo  -->
+                                <input type="hidden" name="user_id" value="<?php echo 1; ?>"> <!-- akn kono user id pai nai tai 1 dice -->
                                 <?php
                                 if (in_array($item['item_id'], $Cart->getCartId($product->getData('cart')) ?? [])){
                                     echo '<button type="submit" disabled class="btn btn-success font-size-12">In the Cart</button>';
                                 }else{
-                                    echo '<button type="submit" name="top_sale_submit" class="btn btn-warning font-size-12">Add to Cart</button>';
+                                    echo '<button type="submit" name="top_sale_submit" class="btn btn-warning font-size-12">Add to Cart</button>'; //button name topsalesubmit
                                 }
                                 ?>
 

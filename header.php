@@ -80,8 +80,8 @@
                 <a href="#" class="py-2 rounded-pill color-primary-bg">
                     <!-- py top and bouttom pading px left and right pading -->
                     <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
-                    <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
-                </a>
+                    <span class="px-3 py-2 rounded-pill text-dark bg-light"><?php echo count($product->getData('cart')); ?></span>
+                </a>    <!-- uprer line a echo statment ke call dice thn product obj thn getdata method aita cart table ar data return korbe , r amra count korbo tai count function a raksi  -->
             </form>
         </div>
     </nav>

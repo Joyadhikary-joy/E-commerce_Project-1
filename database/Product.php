@@ -25,16 +25,16 @@ class Product
         return $resultArray;
     }
 
-    // get product using item id
+    // get product using item id for cart item show
     public function getProduct($item_id = null, $table= 'product'){
         if (isset($item_id)){
-            $result = $this->db->con->query("SELECT * FROM {$table} WHERE item_id={$item_id}");
+            $result = $this->db->con->query("SELECT * FROM {$table} WHERE item_id={$item_id}");// database theke akbar a akta  item khuje dibe aita product table thke
 
             $resultArray = array();
 
             // fetch product data one by one
             while ($item = mysqli_fetch_array($result, MYSQLI_ASSOC)){
-                $resultArray[] = $item;
+                $resultArray[] = $item; // store a row of data in a array
             }
 
             return $resultArray;

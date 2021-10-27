@@ -32,18 +32,18 @@ class Cart
     }
 
     // to get user_id and item_id and insert into cart table
-    public  function addToCart($userid, $itemid){
+    public  function addToCart($userid, $itemid){ // 2 perameter userid & itemid // product ar nije je buttun thake oi ta
         if (isset($userid) && isset($itemid)){
             $params = array(
-                "user_id" => $userid,
-                "item_id" => $itemid
+                "user_id" => $userid, // user
+                "item_id" => $itemid // item id pass korbo
             );
 
-            // insert data into cart
+            // insert data into cart table
             $result = $this->insertIntoCart($params);
             if ($result){
                 // Reload Page
-                header("Location: " . $_SERVER['PHP_SELF']);
+                header("Location: " . $_SERVER['PHP_SELF']); // aita current index file return kore mane reload kore
             }
         }
     }
