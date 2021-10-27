@@ -1,12 +1,18 @@
 
-
 <!--  start  product  -->
+
+<?php
+$item_id = $_GET['item_id'] ?? 1; // name of the variable
+foreach ($product->getData() as $item) : // array of product one by  one in the item variable
+if ($item['item_id'] == $item_id) : // jodi upere item id ar songe ager ta match kore thn print korbo
+?>
+
 <!-- 1st colum a product image and proceed to buy , add to cart  2nd colum product information  3rd coloum for descripssion -->
 <section id="product" class="py-3">
     <div class="container">
         <div class="row">
             <div class="col-sm-6"> <!-- 2 coloum inetialy , 6 coloum space for picture and rest of 6 colum space for product infromation and etc-->
-                <img src="./assets/products/1.png" alt="product" class="img-fluid"> <!-- img fluid for responsive image -->
+                <img src="<?php echo $item['item_image'] ?? "./assets/products/1.png" ?>" alt="product" class="img-fluid"> <!-- img fluid for responsive image -->
                 <div class="form-row pt-4 font-size-16 font-baloo">
                     <div class="col">
                         <button type="submit" class="btn btn-danger form-control">Proceed to Buy</button> <!-- btg danger for light red colour-->
@@ -17,8 +23,8 @@
                 </div>
             </div>
             <div class="col-sm-6 py-5">
-                <h5 class="font-baloo font-size-20">Samsung Galaxy S10+</h5>
-                <small>By Samsung</small>
+                <h5 class="font-baloo font-size-20"><?php echo $item['item_name'] ?? "Unknown"; ?></h5>
+                <small>by <?php echo $item['item_brand'] ?? "Brand"; ?></small>
                 <div class="d-flex">
                     <div class="rating text-warning font-size-12">
                         <span><i class="fas fa-star"></i></span>
@@ -36,11 +42,11 @@
                 <table class="my-3">              <!-- top and buttom margin 3-->
                     <tr class="font-rale font-size-14">  <!-- tr for table row -->
                         <td>M.R.P:</td>
-                        <td><strike>৳ 130000 taka</strike></td>
+                        <td><strike>৳ 80000 taka</strike></td>
                     </tr>
                     <tr class="font-rale font-size-14">
                         <td>Deal Price:</td>                                            <!-- &nbsp; for white space -->
-                        <td class="font-size-20 text-danger">৳<span>115000</span><small class="text-dark font-size-12">&nbsp;&nbsp;Inclusive of all taxes</small></td>
+                        <td class="font-size-20 text-danger">৳<span><?php echo $item['item_price'] ?? 0; ?></span><small class="text-dark font-size-12">&nbsp;&nbsp;Inclusive of all taxes</small></td>
                     </tr>
                     <tr class="font-rale font-size-14">
                         <td>You Save:</td>
@@ -140,4 +146,7 @@
     </div>
 </section>
 <!--   End product  -->
-
+<?php
+endif;
+endforeach;
+?>

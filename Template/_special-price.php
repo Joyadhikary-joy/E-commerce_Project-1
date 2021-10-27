@@ -1,135 +1,41 @@
+<!-- Special Price -->
+<?php
+$brand = array_map(function ($pro){ return $pro['item_brand']; }, $product_shuffle); /*this for new input brand , sob product product_shuffle ar majhe store korsi*/
+$unique = array_unique($brand); /* for storing unique brand */
+sort($unique); /* sort for sorting brand array */
+shuffle($product_shuffle);
+/*
+// request method post
+if($_SERVER['REQUEST_METHOD'] == "POST"){
+    if (isset($_POST['special_price_submit'])){
+        // call method addToCart
+        $Cart->addToCart($_POST['user_id'], $_POST['item_id']);
+    }
+}
 
-<!--Special Price-->
-
-
+$in_cart = $Cart->getCartId($product->getData('cart'));
+*/
+?>
 <section id="special-price">
     <div class="container">
         <h4 class="font-rubik font-size-20">Special Price</h4>
-        <div id="filters" class="button-group text-right font-baloo font-size-14">
-            <!-- bootstrap command for group buttons in right-->
+        <div id="filters" class="button-group text-right font-baloo font-size-16">
             <button class="btn is-checked" data-filter="*">All Brand</button>
-            <button class="btn" data-filter=".Apple">Apple</button>
-            <button class="btn" data-filter=".Samsung">Samsung</button>
-            <button class="btn" data-filter=".Redmi">Xiaomi</button>
-            <button class="btn" data-filter=".Oneplus">Oneplus</button>
+            <?php /* ai array map diye unique array ta itarate korbo akta akta kore // aita brand button  add korbe special price a*/
+            array_map(function ($brand){
+                printf('<button class="btn" data-filter=".%s">%s</button>', $brand, $brand);
+            }, $unique);
+            ?>
         </div>
 
         <div class="grid">
-            <!-- filter only apple .. its work like a class .. if we send a then it sort only a -->
-            <div class="grid-item Apple border">
-                <div class="item py-2" style="width: 200px;">
-                    <div class="product font-rale">
-                        <a href="#"><img src="./assets/products/13.png" alt="product1" class="img-fluid"></a>
-                        <div class="text-center">
-                            <h6>Apple iPhone 10</h6>
-                            <div class="rating text-warning font-size-12">
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span> <!--fas for filled star and far for empty star -->
-                                <span><i class="far fa-star"></i></span>
-                            </div>
-                            <div class="price py-2">
-                                <span>110152 taka</span>
-                            </div>
-                            <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item Samsung border">
-                <div class="item py-2" style="width: 200px;">
-                    <div class="product font-rale">
-                        <a href="#"><img src="./assets/products/1.png" alt="product1" class="img-fluid"></a>
-                        <div class="text-center">
-                            <br>
-                            <h6>Samsung Galaxy S10+</h6>
-                            <div class="rating text-warning font-size-12">
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="far fa-star"></i></span>
-                            </div>
-                            <div class="price py-2">
-                                <span>15299taka</span>
-                            </div>
-                            <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item  Oneplus border">
-                <div class="item py-2" style="width: 200px;">
-                    <div class="product font-rale">
-                        <a href="#"><img src="./assets/products/3.png" alt="product1" class="img-fluid"></a>
-                        <div class="text-center">
-                            <h6>Oneplus 9 Pro</h6>
-                            <div class="rating text-warning font-size-12">
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="far fa-star"></i></span>
-                            </div>
-                            <div class="price py-2">
-                                <span>15002taka</span>
-                            </div>
-                            <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item Apple border">
-                <div class="item py-2" style="width: 200px;">
-                    <div class="product font-rale">
-                        <a href="#"><img src="./assets/products/2255.png" alt="product1" class="img-fluid"></a>
-                        <div class="text-center">
-                            <h6>Apple iphone 11 pro max</h6>
-                            <div class="rating text-warning font-size-12">
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="far fa-star"></i></span>
-                            </div>
-                            <div class="price py-2">
-                                <span>39352 taka</span>
-                            </div>
-                            <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item Samsung border">
-                <div class="item py-2" style="width: 200px;">
-                    <div class="product font-rale">
-                        <a href="#"><img src="./assets/products/1122.png" alt="product1" class="img-fluid"></a>
-                        <div class="text-center">
-                            <br>
-                            <h6>Samsung Note 11</h6>
-                            <div class="rating text-warning font-size-12">
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="far fa-star"></i></span>
-                            </div>
-                            <div class="price py-2">
-                                <span>12152 taka</span>
-                            </div>
-                            <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item  Redmi border ">
-                <div class="item py-2" style="width: 200px;">
-                    <div class="product font-rale">
-                        <div class="d-flex flex-column">
-                            <a href="#"><img src="./assets/products/1111.png" class="img-fluid" alt="pro1"></a>
-                            <div class="text-center">
-                                <h6>Redmi Note 10 Pro</h6>
+            <?php array_map(function ($item) use($in_cart){ ?> <!-- array map fun for iterate array , call function as index then display this array -->
+                <div class="grid-item border <?php echo $item['item_brand'] ?? "Brand" ; ?>"> <!--database ar product table theke item brand coloum theke banrd pike korbo ?? aita null closing oparetor use korsi jodi item_brand empty hoi tkn apple default print hobe-->
+                    <div class="item py-2" style="width: 200px;">
+                        <div class="product font-rale">
+                            <a href="<?php printf('%s?item_id=%s', 'product.php',  $item['item_id']); ?>"><img src="<?php echo $item['item_image'] ?? "./assets/products/13.png"; ?>" alt="product1" class="img-fluid"></a>
+                            <div class="text-center"> <!-- special price (index ) page theke product page a redirect korbe jate sob details dekty pari , item_id dekhe bujbo konta jacche ,valuse hocche item_id -->
+                                <h6><?php echo $item['item_name'] ?? "Unknown"; ?></h6>
                                 <div class="rating text-warning font-size-12">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
@@ -138,109 +44,25 @@
                                     <span><i class="far fa-star"></i></span>
                                 </div>
                                 <div class="price py-2">
-                                    <span>19152 taka</span>
+                                    <span>৳<?php echo $item['item_price'] ?? 0 ?></span>
                                 </div>
-                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                <form method="post">
+                                    <input type="hidden" name="item_id" value="<?php echo $item['item_id'] ?? '1'; ?>">
+                                    <input type="hidden" name="user_id" value="<?php echo 1; ?>">
+                                    <?php
+                                    if (in_array($item['item_id'], $in_cart ?? [])){
+                                        echo '<button type="submit" disabled class="btn btn-success font-size-12">In the Cart</button>';
+                                    }else{
+                                        echo '<button type="submit" name="top_sale_submit" class="btn btn-warning font-size-12">Add to Cart</button>';
+                                    }
+                                    ?>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="grid-item  Redmi border ">
-                <div class="item py-2" style="width: 200px;">
-                    <div class="product font-rale">
-                        <div class="d-flex flex-column">
-                            <a href="#"><img src="./assets/products/2.png" class="img-fluid" alt="pro1"></a>
-                            <div class="text-center">
-                                <h6>Xiaomi poco X3</h6>
-                                <div class="rating text-warning font-size-12">
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="far fa-star"></i></span>
-                                </div>
-                                <div class="price py-2">
-                                    <span>23152 taka</span>
-                                </div>
-                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item  Samsung border "> <!-- ai line ta group korar jonno use hobe .. jkn sort kori tkn samsung border ar under a aita cole jabe -->
-                <div class="item py-2" style="width: 200px;">
-                    <div class="product font-rale">
-                        <div class="d-flex flex-column">
-                            <a href="#"><img src="./assets/products/1123.png" class="img-fluid" alt="pro1"></a>
-                            <div class="text-center">
-                                <br>
-                                <h6>Samsung Note 10</h6>
-                                <div class="rating text-warning font-size-12">
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="far fa-star"></i></span>
-                                </div>
-                                <div class="price py-2">
-                                    <span>9991 taka</span>
-                                </div>
-                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item  Oneplus border">
-                <div class="item py-2" style="width: 200px;">
-                    <div class="product font-rale">
-                        <div class="d-flex flex-column">
-                            <a href="#"><img src="./assets/products/88991.png" class="img-fluid" alt="pro1"></a>
-                            <div class="text-center">
-                                <h6>Oneplus 8 pro </h6>
-                                <div class="rating text-warning font-size-12">
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="far fa-star"></i></span>
-                                </div>
-                                <div class="price py-2">
-                                    <span>23352 taka</span>
-                                </div>
-                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item Apple border  ">
-                <div class="item py-2" style="width: 200px;">
-                    <div class="product font-rale">
-                        <div class="d-flex flex-column">
-                            <a href="#"><img src="./assets/products/13.png" class="img-fluid" alt="pro1"></a>
-                            <div class="text-center">
-                                <h6>Apple iPhone 10 max</h6>
-                                <div class="rating text-warning font-size-12">
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="far fa-star"></i></span>
-                                </div>
-                                <div class="price py-2">
-                                    <span>152252 taka</span>
-                                </div>
-                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php }, $product_shuffle) ?> <!-- product_shuffle arrary thke nibo sob -->
         </div>
     </div>
 </section>
-
-<!--!Special Price-->
+<!-- !Special Price -->
