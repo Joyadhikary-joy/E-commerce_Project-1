@@ -2,7 +2,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     if (isset($_POST['delete-cart-submit'])){
-        $deletedrecord = $Cart->deleteCart($_POST['item_id']);
+        $deletedrecord = $Cart->deleteCart($_POST['item_id']);  // jodi delete ar jonno request kore thn aita cart ar delete function ke call korbe (item_id soho)
     }
 
     // save for later
@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                                     </div>
 
                                     <form method="post">
-                                        <input type="hidden" value="<?php echo $item['item_id'] ?? 0; ?>" name="item_id">
+                                        <input type="hidden" value="<?php echo $item['item_id'] ?? 0; ?>" name="item_id">   <!-- input hidden rakhbo ,database ar  item id table  thkee ai selected item delete korbo -->
                                         <button type="submit" name="delete-cart-submit" class="btn font-baloo text-danger px-3 border-right">Delete</button>
                                     </form>
 

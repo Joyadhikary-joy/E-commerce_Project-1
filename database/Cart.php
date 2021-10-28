@@ -49,11 +49,12 @@ class Cart
     }
 
     // delete cart item using cart item id
+    // aitake _cart-template theke call korbe id soho
     public function deleteCart($item_id = null, $table = 'cart'){
         if($item_id != null){
-            $result = $this->db->con->query("DELETE FROM {$table} WHERE item_id={$item_id}");
+            $result = $this->db->con->query("DELETE FROM {$table} WHERE item_id={$item_id}"); // sql query to delete from the table cart
             if($result){
-                header("Location:" . $_SERVER['PHP_SELF']);
+                header("Location:" . $_SERVER['PHP_SELF']); // reload page r jonno
             }
             return $result;
         }
@@ -71,9 +72,10 @@ class Cart
     }
 
     // get item_it of shopping cart list
+    // amra doubicate item rakhbo nah cart a , ajonno amra cart iteam gula ai cart array teke ber korbo
     public function getCartId($cartArray = null, $key = "item_id"){
         if ($cartArray != null){
-            $cart_id = array_map(function ($value) use($key){
+            $cart_id = array_map(function ($value) use($key){ // iterate all values of  cartarray
                 return $value[$key];
             }, $cartArray);
             return $cart_id;

@@ -40,7 +40,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                                 <input type="hidden" name="user_id" value="<?php echo 1; ?>">
                                 <?php
                                 if (in_array($item['item_id'], $Cart->getCartId($product->getData('cart')) ?? [])){
-                                    echo '<button type="submit" disabled class="btn btn-success font-size-12">In the Cart</button>';
+                                    echo '<button type="submit" disabled class="btn btn-success font-size-12">In the Cart</button>'; // in array search korbe oi product ke jodi age theke oi product cart a thake tobe abr add korbe nah
                                 }else{
                                     echo '<button type="submit" name="new_phones_submit" class="btn btn-warning font-size-12">Add to Cart</button>';
                                 }

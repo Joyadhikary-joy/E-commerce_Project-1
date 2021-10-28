@@ -5,6 +5,15 @@
 $item_id = $_GET['item_id'] ?? 1; // name of the variable
 foreach ($product->getData() as $item) : // array of product one by  one in the item variable
 if ($item['item_id'] == $item_id) : // jodi upere item id ar songe ager ta match kore thn print korbo
+
+
+// request method post
+        if($_SERVER['REQUEST_METHOD'] == "POST"){ // aita request method ke call korbe ( jodi amra add to cart buttuon a press kori tkn
+            if (isset($_POST['product_submit'])){ // only for top sale button
+                // call method addToCart
+                $Cart->addToCart($_POST['user_id'], $_POST['item_id']); // cart a userid r itemid store korbo , post buttun name
+            }
+        }
 ?>
 
 <!-- 1st colum a product image and proceed to buy , add to cart  2nd colum product information  3rd coloum for descripssion -->
@@ -18,7 +27,18 @@ if ($item['item_id'] == $item_id) : // jodi upere item id ar songe ager ta match
                         <button type="submit" class="btn btn-danger form-control">Proceed to Buy</button> <!-- btg danger for light red colour-->
                     </div>
                     <div class="col">
-                        <button type="submit" class="btn btn-warning form-control">Add to Cart</button> <!-- btg warning for light yellow colour-->
+                        <form method="post">
+                            <input type="hidden" name="item_id" value="<?php echo $item['item_id'] ?? '1'; ?>"> <!--input data show korbo nah tai hidden,, upr theke item id pabo  -->
+                            <input type="hidden" name="user_id" value="<?php echo 1; ?>"> <!-- akn kono user id pai nai tai 1 dice -->
+                            <?php
+                            if (in_array($item['item_id'], $Cart->getCartId($product->getData('cart')) ?? [])){
+                                echo '<button type="submit" disabled class="btn btn-success font-size-19">In the Cart</button>';
+                            }else{
+                                echo '<button type="submit" name="product_submit" class="btn btn-warning font-size-19">Add to Cart</button>'; //button name topsalesubmit
+                            }
+                            ?>
+
+                        </form><!-- btg warning for light yellow colour-->
                     </div>
                 </div>
             </div>
@@ -135,7 +155,6 @@ if ($item['item_id'] == $item_id) : // jodi upere item id ar songe ager ta match
 
 
             </div>
-
             <div class="col-12">
                 <h6 class="font-rubik">Product Description</h6>
                 <hr> <!-- horizontal row-->

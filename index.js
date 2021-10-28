@@ -72,28 +72,70 @@ $(document).ready(function(){
     })
 
     // product qty section
-    let $qty_up = $(".qty .qty-up");  // called (.)class qty-up 
-    let $qty_down = $(".qty .qty-down"); //  called (.)class qty-down
+
+    // product qty section
+    let $qty_up = $(".qty .qty-up");  // called (.)class qty-up
+    let $qty_down = $(".qty .qty-down");//  called (.)class qty-down
+    let $deal_price = $("#deal-price");
     // let $input = $(".qty .qty_input");
     // aita use korb nah karon cart ar page a amra 2 ta product ar jonno quantity barai komai .. ajonno same kaj 2 bar kora lagbe .. tai amra funtion ar mto perameter pass korbo
 
-    // click on qty up button
-    $qty_up.click(function(e){  // click is jquery method , when click on it it exicute function as a peramiter e 
-        let $input = $(`.qty_input[data-id='${$(this).data("id")}']`); // jkn cart ar 2 ta product ar jonno call korbo tkn data-id= pro1 ar jonno 1 num ta barabe r data-id=pro2 dile 2 num ta barabe  
-        if($input.val() >= 1 && $input.val() <= 9){ // if input >=1 and input <=9 , val() pick the valuse from input 
-            $input.val(function(i, oldval){ // update input box quantity , pass (i , oldval) as a argument i = current index , oldval =current value in the box 
-                return ++oldval; // increase value of input text box 
-            });
-        }
-    });
 
-    // click on qty down button
+
+// click on qty up button
+    $qty_up.click(function(e){  // click is jquery method , when click on it it exicute function as a peramiter e
+
+        let $input = $(`.qty_input[data-id='${$(this).data("id")}']`);  // jkn cart ar 2 ta product ar jonno call korbo tkn data-id= pro1 ar jonno 1 num ta barabe r data-id=pro2 dile 2 num ta barabe
+        let $price = $(`.product_price[data-id='${$(this).data("id")}']`);  // data id diye call korbo product price ke
+
+        // change product price using ajax call
+        $.ajax({url: "template/ajax.php", type : 'post', data : { itemid : $(this).data("id")}, success: function(result){
+                let obj = JSON.parse(result);
+                let item_price = obj[0]['item_price']; // price nilam
+
+                if($input.val() >= 1 && $input.val() <= 9){  // if input >=1 and input <=9 , val() pick the valuse from input
+                    $input.val(function(i, oldval){ // update input box quantity , pass (i , oldval) as a argument i = current index , oldval =current value in the box
+                        return ++oldval;
+                    });
+
+                    // increase price of the product
+                    $price.text(parseInt(item_price * $input.val()).toFixed(2));// parseInt to convert string to int , to fixed fractional value add kore
+
+                    // set subtotal price
+                    let subtotal = parseInt($deal_price.text()) + parseInt(item_price);
+                    $deal_price.text(subtotal.toFixed(2));
+                }
+
+            }}); // closing ajax request
+    }); // closing qty up button
+
+// click on qty down button
     $qty_down.click(function(e){
+
         let $input = $(`.qty_input[data-id='${$(this).data("id")}']`);
-        if($input.val() > 1 && $input.val() <= 10){
-            $input.val(function(i, oldval){
-                return --oldval; // decrease by 1 
-            });
-        }
-    });
+        let $price = $(`.product_price[data-id='${$(this).data("id")}']`);
+
+        // change product price using ajax call
+        $.ajax({url: "template/ajax.php", type : 'post', data : { itemid : $(this).data("id")}, success: function(result){
+                let obj = JSON.parse(result);
+                let item_price = obj[0]['item_price'];
+
+                if($input.val() > 1 && $input.val() <= 10){
+                    $input.val(function(i, oldval){
+                        return --oldval;
+                    });
+
+
+                    // increase price of the product
+                    $price.text(parseInt(item_price * $input.val()).toFixed(2));
+
+                    // set subtotal price
+                    let subtotal = parseInt($deal_price.text()) - parseInt(item_price);
+                    $deal_price.text(subtotal.toFixed(2));
+                }
+
+            }}); // closing ajax request
+    }); // closing qty down button
+
+
 });
