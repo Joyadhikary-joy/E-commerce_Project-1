@@ -110,6 +110,7 @@
                             <div class="social-links">
                                 <a href="https://www.facebook.com/JOY.ADHIKARY.071" target="_blank"><span class="fa fa-facebook"></span></a>
                                 <a href=""><span class="fa fa-twitter"></span></a>
+                                <a href=""><span class="fa fa-instagram"></span></a>
                                 <a href="https://www.linkedin.cn/in/joy-adhikary-7b44461b7/"><span class="fa fa-linkedin"></span></a>
                             </div>
                         </div>
@@ -123,8 +124,9 @@
                             <p><br>PROGRAMMER</p>
                             <div class="social-links">
                                 <a href="https://www.facebook.com/pallab.majumdar.99/friends_mutual " target="_blank"><span class="fa fa-facebook"></span></a>
-                                <a href=""><span class="fa fa-twitter"></span></a>
-                                <a href=""><span class="fa fa-linkedin"></span></a>
+                                <a href="https://twitter.com/Pallab06275064"><span class="fa fa-twitter"></span></a>
+                                <a href="https://www.instagram.com/pallab.majumdar/"><span class="fa fa-instagram"></span></a>
+                                <a href="https://www.linkedin.com/in/pallab-majumdar-a4a91714a/"><span class="fa fa-linkedin"></span></a>
                             </div>
                         </div>
                     </div>
@@ -133,12 +135,13 @@
                     <img src="./assets/about_us/habib1.jpg" alt="team" />
                     <div class="inner">
                         <div class="info">
-                            <h5>Habib</h5>
+                            <h5>Habib  </h5>
                             <p><br>PROGRAMMER</p>
                             <div class="social-links">
                                 <a href="https://www.facebook.com/habibullah.bashar.1" target="_blank"><span class="fa fa-facebook"></span></a>
-                                <a href=""><span class="fa fa-twitter"></span></a>
-                                <a href=""><span class="fa fa-linkedin"></span></a>
+                                <a href="https://twitter.com/Mh_Habib_07"><span class="fa fa-twitter"></span></a>
+                                <a href="https://www.instagram.com/the_habib9/"><span class="fa fa-instagram"></span></a>
+                                <a href="https://www.linkedin.com/in/mr-habib-3537261a7/"><span class="fa fa-linkedin"></span></a>
                             </div>
                         </div>
                     </div>
@@ -147,11 +150,12 @@
                     <img src="./assets/about_us/mitu.jpg" alt="team" />
                     <div class="inner">
                         <div class="info">
-                            <h5>Mitu</h5>
+                            <h5>Mafuja Akter Mitu</h5>
                             <p><br> Designer</p>
                             <div class="social-links">
                                 <a href="https://www.facebook.com/profile.php?id=100010988084894&sk=friends_mutual" target="_blank"><span class="fa fa-facebook"></span></a>
                                 <a href=""><span class="fa fa-twitter"></span></a>
+                                <a href=""><span class="fa fa-instagram"></span></a>
                                 <a href=""><span class="fa fa-linkedin"></span></a>
                             </div>
                         </div>
