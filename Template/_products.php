@@ -6,7 +6,6 @@ $item_id = $_GET['item_id'] ?? 1; // name of the variable
 foreach ($product->getData() as $item) : // array of product one by  one in the item variable
 if ($item['item_id'] == $item_id) : // jodi upere item id ar songe ager ta match kore thn print korbo
 
-
 // request method post
         if($_SERVER['REQUEST_METHOD'] == "POST"){ // aita request method ke call korbe ( jodi amra add to cart buttuon a press kori tkn
             if (isset($_POST['product_submit'])){ // only for top sale button
@@ -62,15 +61,16 @@ if ($item['item_id'] == $item_id) : // jodi upere item id ar songe ager ta match
                 <table class="my-3">              <!-- top and buttom margin 3-->
                     <tr class="font-rale font-size-14">  <!-- tr for table row -->
                         <td>M.R.P:</td>
-                        <td><strike>৳ 80000 taka</strike></td>
+                        <td class="font-size-20 text-danger">৳ <span><strike><?php echo ($item['item_price'] + '4500') ?? 0; ?></span></strike></td>
+
                     </tr>
                     <tr class="font-rale font-size-14">
                         <td>Deal Price:</td>                                            <!-- &nbsp; for white space -->
-                        <td class="font-size-20 text-danger">৳<span><?php echo $item['item_price'] ?? 0; ?></span><small class="text-dark font-size-12">&nbsp;&nbsp;Inclusive of all taxes</small></td>
+                        <td class="font-size-20 text-danger">৳ <span><?php echo $item['item_price'] ?? 0; ?></span><small class="text-dark font-size-12">&nbsp;&nbsp;Inclusive of all taxes</small></td>
                     </tr>
                     <tr class="font-rale font-size-14">
                         <td>You Save:</td>
-                        <td><span class="font-size-16 text-warning">৳ 15000</span></td>
+                        <td><span class="font-size-16 text-warning">৳ 4500</span></td>
                     </tr>
                 </table>
                 <!---    !product price       -->

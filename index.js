@@ -76,7 +76,7 @@ $(document).ready(function(){
     // product qty section
     let $qty_up = $(".qty .qty-up");  // called (.)class qty-up
     let $qty_down = $(".qty .qty-down");//  called (.)class qty-down
-    let $deal_price = $("#deal-price");
+    let $deal_price = $("#deal-price");  // store dealprice in dealprice as a variable
     // let $input = $(".qty .qty_input");
     // aita use korb nah karon cart ar page a amra 2 ta product ar jonno quantity barai komai .. ajonno same kaj 2 bar kora lagbe .. tai amra funtion ar mto perameter pass korbo
 
@@ -89,8 +89,8 @@ $(document).ready(function(){
         let $price = $(`.product_price[data-id='${$(this).data("id")}']`);  // data id diye call korbo product price ke
 
         // change product price using ajax call
-        $.ajax({url: "template/ajax.php", type : 'post', data : { itemid : $(this).data("id")}, success: function(result){
-                let obj = JSON.parse(result);
+        $.ajax({url: "template/ajax.php", type : 'post', data : { itemid : $(this).data("id")}, success: function(result){ // url = kon jaigai send korbo response ,post ke call diye data : { } ar sob item gula pass korbo
+                let obj = JSON.parse(result); //parse () convert result into obj
                 let item_price = obj[0]['item_price']; // price nilam
 
                 if($input.val() >= 1 && $input.val() <= 9){  // if input >=1 and input <=9 , val() pick the valuse from input
@@ -102,7 +102,7 @@ $(document).ready(function(){
                     $price.text(parseInt(item_price * $input.val()).toFixed(2));// parseInt to convert string to int , to fixed fractional value add kore
 
                     // set subtotal price
-                    let subtotal = parseInt($deal_price.text()) + parseInt(item_price);
+                    let subtotal = parseInt($deal_price.text()) + parseInt(item_price); // deal price + item price add kore dibo
                     $deal_price.text(subtotal.toFixed(2));
                 }
 

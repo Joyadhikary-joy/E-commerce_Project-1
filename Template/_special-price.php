@@ -4,6 +4,8 @@ $brand = array_map(function ($pro){ return $pro['item_brand']; },$product_shuffl
 $unique = array_unique($brand); /* for storing unique brand */
 sort($unique); /* sort for sorting brand array */
 shuffle($product_shuffle);
+
+
 // request method post
 if($_SERVER['REQUEST_METHOD'] == "POST"){
     if (isset($_POST['special_price_submit'])){
