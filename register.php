@@ -9,8 +9,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){ // post request paile aitai dukhbe
     // Check if username is empty
     if(empty(trim($_POST["username"]))){
         $username_err = "Opss Username can not be blank"; // jodi user name empty thake then aita print korbe 
-        echo "<p align='center'> <font color=red  size='6pt'> Opss!! Username can not be blank   </font> </p>";
-       // echo "  Opss!! Username can not be blank   ";
+      echo "<p align='center'> <font color=red  size='6pt'> Opss!! Username can not be blank   </font> </p>";
+      //  echo '<script>alert("Opss!! Username can not be blank ")</script>';
+
     }
     else{
         $sql = "SELECT id FROM users WHERE username = ?"; // pre -prepare korlam sql query ke 
@@ -139,9 +140,11 @@ mysqli_close($conn);// database connection close
     </ul>
   </div>
 </nav>
-<!--navbar close --> 
+<!--navbar close -->
 
-<!-- start bootstrap , it is pike from getbootstrap-->
+
+
+  <!-- start bootstrap , it is pike from getbootstrap-->
 <div class="container mt-4"> <!--top margin 4 --> 
 <h3>Please Register Here </h3> 
 <hr>  <!--hr for line , lower line for h3  --> 
@@ -186,6 +189,7 @@ mysqli_close($conn);// database connection close
   <button type="submit" class="btn btn-primary">Sign in</button>
 </form>
 </div>
+
 
 <!-- close bootstrap , it is pike from getbootstrap-->
 

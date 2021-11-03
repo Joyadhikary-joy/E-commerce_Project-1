@@ -20,6 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){  // jodi post request pai
         $err = " Opss !! Please enter username + password";
         echo "<p align='center'> <font color=red  size='6pt'> Opss !! Please enter the username and  password to log in </font> </p>";
         //echo " Opss !! Please enter the username and  password to log in  ";
+      //  echo '<script>alert(" Opss !! Please enter the username and  password to log in ")</script>';
     }
     else{
         $username = trim($_POST['username']);// set username 

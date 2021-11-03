@@ -51,8 +51,6 @@
             <ul class="navbar-nav m-auto font-rubik">
                 <!-- nav bar ar margin jate space pai -->
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">On Sale</a>
-                <li class="nav-item active">
                     <a class="nav-link" href="product.php">Products </a> <!-- fas fa for ^ icone-->
                 </li>
                 <li class="nav-item active">
@@ -62,7 +60,7 @@
                     <a class="nav-link" href="cart.php">Cart Items</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="comingsoon.php">Cooming soon</a>
+                    <a class="nav-link" href="comingsoon.php">Coming soon</a>
                 </li>
             </ul>
             <!-- curt and shopping icone -->
@@ -90,13 +88,19 @@
     <section id="banner-area">
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <img src="./assets/Banner3.png" alt="Banner1">
+                <img src="./assets/Banner3.png" alt="Banner1"
+                     width="1920"
+                     height="802">
             </div>
             <div class="item">
-                <img src="./assets/Banner2.png" alt="Banner2">
+                <img src="./assets/Banner2.png" alt="Banner2"
+                     width="1920"
+                     height="802">
             </div>
             <div class="item">
-                <img src="./assets/Banner1.png" alt="Banner3">
+                <img src="./assets/Banner1.png" alt="Banner3"
+                     width="1920"
+                     height="802">
             </div>
         </div>
     </section>
@@ -120,9 +124,11 @@
                 <div class="grid-item Apple border">
                     <div class="item py-2" style="width: 200px;">
                         <div class="product font-rale">
-                            <a href="#"><img src="./assets/products/13.png" alt="product1" class="img-fluid"></a>
+                            <a href="#"><img src="./assets/coming%20soon/Iphone_13_pro_max.jpg"  alt="product1" class="img-fluid" width="600"
+                                             height="500"> </a>
                             <div class="text-center">
-                                <h6>Apple iPhone 10</h6>
+                                <br>
+                                <h6>Apple iphone 13 pro max </h6>
                                 <div class="rating text-warning font-size-12">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
@@ -140,10 +146,12 @@
                 <div class="grid-item Samsung border">
                     <div class="item py-2" style="width: 200px;">
                         <div class="product font-rale">
-                            <a href="#"><img src="./assets/products/1.png" alt="product1" class="img-fluid"></a>
+                            <a href="#"><img src="./assets/coming%20soon/galaxy%20tab%20s7.png" alt="product1" class="img-fluid"  width="600"
+                                             height="500"></a>
                             <div class="text-center">
                                 <br>
-                                <h6>Samsung Galaxy S10+</h6>
+                                <br>
+                                <h6>Samsung Galaxy tab s7 </h6>
                                 <div class="rating text-warning font-size-12">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
@@ -161,9 +169,11 @@
                 <div class="grid-item  Oneplus border">
                     <div class="item py-2" style="width: 200px;">
                         <div class="product font-rale">
-                            <a href="#"><img src="./assets/products/3.png" alt="product1" class="img-fluid"></a>
+                            <a href="#"><img src="./assets/coming%20soon/oneplus%209%20rt.png" alt="product1" class="img-fluid"  width="600"
+                                             height="500"></a>
                             <div class="text-center">
-                                <h6>Oneplus 9 Pro</h6>
+                                <br>
+                                <h6>Oneplus 9  RT</h6>
                                 <div class="rating text-warning font-size-12">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
@@ -181,9 +191,11 @@
                 <div class="grid-item Apple border">
                     <div class="item py-2" style="width: 200px;">
                         <div class="product font-rale">
-                            <a href="#"><img src="./assets/products/2255.png" alt="product1" class="img-fluid"></a>
+                            <a href="#"><img src="./assets/coming%20soon/Iphone_se20.jpg" alt="product1" class="img-fluid"  width="600"
+                                             height="500"></a>
                             <div class="text-center">
-                                <h6>Apple iphone 11 pro max</h6>
+                                <br>
+                                <h6>Apple iphone SE 2020</h6>
                                 <div class="rating text-warning font-size-12">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
@@ -201,10 +213,11 @@
                 <div class="grid-item Samsung border">
                     <div class="item py-2" style="width: 200px;">
                         <div class="product font-rale">
-                            <a href="#"><img src="./assets/products/1122.png" alt="product1" class="img-fluid"></a>
+                            <a href="#"><img src="./assets/coming%20soon/galaxy_z_fold.jpg" alt="product1" class="img-fluid"  width="600"
+                                             height="500"></a>
                             <div class="text-center">
                                 <br>
-                                <h6>Samsung Note 11</h6>
+                                <h6>Samsung Galaxy Z flip </h6>
                                 <div class="rating text-warning font-size-12">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
@@ -223,9 +236,10 @@
                     <div class="item py-2" style="width: 200px;">
                         <div class="product font-rale">
                             <div class="d-flex flex-column">
-                                <a href="#"><img src="./assets/products/1111.png" class="img-fluid" alt="pro1"></a>
+                                <a href="#"><img src="./assets/coming%20soon/mi%20mix%204.png" class="img-fluid" alt="pro1"  width="600"
+                                                 height="500"></a>
                                 <div class="text-center">
-                                    <h6>Redmi Note 10 Pro</h6>
+                                    <h6>Xiaomi mi max 4</h6>
                                     <div class="rating text-warning font-size-12">
                                         <span><i class="fas fa-star"></i></span>
                                         <span><i class="fas fa-star"></i></span>
@@ -241,36 +255,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid-item  Redmi border ">
+                <div class="grid-item  Oneplus border ">
                     <div class="item py-2" style="width: 200px;">
                         <div class="product font-rale">
                             <div class="d-flex flex-column">
-                                <a href="#"><img src="./assets/products/2.png" class="img-fluid" alt="pro1"></a>
-                                <div class="text-center">
-                                    <h6>Xiaomi poco X3</h6>
-                                    <div class="rating text-warning font-size-12">
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                    </div>
-                                    <div class="price py-2">
-                                    </div>
-                                    <button type="submit" class="btn btn-warning font-size-12">Coming soon</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item  Samsung border "> <!-- ai line ta group korar jonno use hobe .. jkn sort kori tkn samsung border ar under a aita cole jabe -->
-                    <div class="item py-2" style="width: 200px;">
-                        <div class="product font-rale">
-                            <div class="d-flex flex-column">
-                                <a href="#"><img src="./assets/products/1123.png" class="img-fluid" alt="pro1"></a>
+                                <a href="#"><img src="./assets/coming%20soon/Oneplus9R.jpg" class="img-fluid" alt="pro1"  width="600"
+                                                 height="500"></a>
                                 <div class="text-center">
                                     <br>
-                                    <h6>Samsung Note 10</h6>
+                                    <h6>Oneplus 9 R</h6>
                                     <div class="rating text-warning font-size-12">
                                         <span><i class="fas fa-star"></i></span>
                                         <span><i class="fas fa-star"></i></span>
@@ -280,19 +273,21 @@
                                     </div>
                                     <div class="price py-2">
                                     </div>
-                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                    <button type="submit" class="btn btn-warning font-size-12">Coming soon</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="grid-item  Oneplus border">
+                <div class="grid-item Redmi border ">
                     <div class="item py-2" style="width: 200px;">
                         <div class="product font-rale">
                             <div class="d-flex flex-column">
-                                <a href="#"><img src="./assets/products/88991.png" class="img-fluid" alt="pro1"></a>
+                                <a href="#"><img src="./assets/coming%20soon/MI11x.jpg" class="img-fluid" alt="pro1"  width="600"
+                                                 height="500"></a>
                                 <div class="text-center">
-                                    <h6>Oneplus 8 pro </h6>
+                                    <br>
+                                    <h6>Xiaomi MI MIX 11x</h6>
                                     <div class="rating text-warning font-size-12">
                                         <span><i class="fas fa-star"></i></span>
                                         <span><i class="fas fa-star"></i></span>
@@ -302,19 +297,21 @@
                                     </div>
                                     <div class="price py-2">
                                     </div>
-                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                    <button type="submit" class="btn btn-warning font-size-12">Coming soon</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="grid-item Apple border  ">
+                <div class="grid-item  Oneplus border "> <!-- ai line ta group korar jonno use hobe .. jkn sort kori tkn samsung border ar under a aita cole jabe -->
                     <div class="item py-2" style="width: 200px;">
                         <div class="product font-rale">
                             <div class="d-flex flex-column">
-                                <a href="#"><img src="./assets/products/13.png" class="img-fluid" alt="pro1"></a>
+                                <a href="#"><img src="./assets/coming%20soon/One_plus_n10.jpg" class="img-fluid" alt="pro1"  width="600"
+                                                 height="500"></a>
                                 <div class="text-center">
-                                    <h6>Apple iPhone 10 max</h6>
+                                    <br>
+                                    <h6>Oneplus N10</h6>
                                     <div class="rating text-warning font-size-12">
                                         <span><i class="fas fa-star"></i></span>
                                         <span><i class="fas fa-star"></i></span>
@@ -324,7 +321,54 @@
                                     </div>
                                     <div class="price py-2">
                                     </div>
-                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                    <button type="submit" class="btn btn-warning font-size-12">Coming soon</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item Apple border">
+                    <div class="item py-2" style="width: 200px;">
+                        <div class="product font-rale">
+                            <div class="d-flex flex-column">
+                                <a href="#"><img src="./assets/coming%20soon/iphone%2013%20pro.jpg" class="img-fluid" alt="pro1"  width="600"
+                                                 height="500"></a>
+                                <div class="text-center">
+                                    <h6>Apple iphone 13 max  </h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Coming soon</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item Samsung border  ">
+                    <div class="item py-2" style="width: 200px;">
+                        <div class="product font-rale">
+                            <div class="d-flex flex-column">
+                                <a href="#"><img src="./assets/coming%20soon/galaxy_z_fold.jpg" class="img-fluid" alt="pro1"  width="600"
+                                                 height="500"></a>
+                                <div class="text-center">
+                                    <br>
+                                    <h6>Galaxy Z fold II </h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Coming soon</button>
                                 </div>
                             </div>
                         </div>

@@ -32,8 +32,8 @@
             <div class="col-lg-2 col-12">
                 <h4 class="font-rubik font-size-20">Account</h4>
                 <div class="d-flex flex-column flex-wrap">
-                    <a href="login.php" class="font-rale font-size-14 text-white-50 pb-1">My Account</a>
-                    <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Order History</a>
+                    <a href="welcome.php" class="font-rale font-size-14 text-white-50 pb-1">My Account</a>
+                    <a href="cart.php" class="font-rale font-size-14 text-white-50 pb-1">Order History</a>
                     <a href="cart.php" class="font-rale font-size-14 text-white-50 pb-1">Wish List</a>
                     <a href="register.php" class="font-rale font-size-14 text-white-50 pb-1">Regristraton</a>
                 </div>
