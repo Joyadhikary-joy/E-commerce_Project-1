@@ -124,12 +124,13 @@ if ($item['item_id'] == $item_id) : // jodi upere item id ar songe ager ta match
                     </div>
                     <div class="col-6">
                         <!-- product quantity section -->
+
                         <div class="qty d-flex">
                             <h6 class="font-baloo">Quantity</h6>
                             <div class="px-4 d-flex font-rale">
                                 <button class="qty-up border bg-light" data-id="pro1"><i class="fas fa-angle-up"></i></button> <!-- for ^ button -->
                                 <input type="text" data-id="pro1" class="qty_input border px-2 w-50 bg-light" disabled value="1" placeholder="1"> <!-- disable korsi jate input box a likty na pare , defalut value is 1 always -->
-                                <button data-id="pro1" class="qty-down border bg-light"><i class="fas fa-angle-down"></i></button>
+                                <button data-id="pro2" class="qty-down border bg-light"><i class="fas fa-angle-down"></i></button>
                             </div>
                         </div>
                         <!-- product qty section end -->

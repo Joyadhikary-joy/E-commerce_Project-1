@@ -31,7 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){ // post request paile aitai dukhbe
                     $username_err = "This username is already taken"; 
                     echo " ";
                   //  echo " Opss !! This username is already taken  ";
-                    echo "<p align='center'> <font color=red  size='6pt'> Opss !! This username is already taken  </font> </p>";
+                   echo "<p align='center'> <font color=red  size='6pt'> Opss !! This username is already taken  </font> </p>";
+                   // echo '<script>alert("Opss !! This username is already taken  ")</script>';
                 }
                 else{
                     $username = trim($_POST['username']);// jodi username age theke nah thake thn store korbe username ke 
@@ -145,47 +146,56 @@ mysqli_close($conn);// database connection close
 
 
   <!-- start bootstrap , it is pike from getbootstrap-->
-<div class="container mt-4"> <!--top margin 4 --> 
+<div class="container mt-4"> <!--top margin 4 -->
 <h3>Please Register Here </h3> 
 <hr>  <!--hr for line , lower line for h3  --> 
 <form action="" method="post"> <!--action blank and method post kore dice  -->
-  <div class="form-row">
+    <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputEmail4">Username **</label>
-      <input type="text" class="form-control" name="username" id="inputEmail4" placeholder="Email"><!--type text -->
+        <img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/30/000000/external-user-interface-kiranshastry-gradient-kiranshastry.png"/>
+      <label for="inputEmail4">   Username </label>
+      <input type="text" class="form-control" name="username" id="inputEmail4" placeholder="Username"><!--type text -->
     </div>
     <div class="form-group col-md-6">
-      <label for="inputPassword4">Password **</label>
+        <img src="https://img.icons8.com/external-photo3ideastudio-lineal-color-photo3ideastudio/30/000000/external-password-digital-business-photo3ideastudio-lineal-color-photo3ideastudio.png"/>
+        <label for="inputPassword4">   Password </label>
       <input type="password" class="form-control" name ="password" id="inputPassword4" placeholder="Password"><!--type text -->
     </div>
-  </div>
-  <div class="form-group">
-      <label for="inputPassword4">Confirm Password **</label>
+    </div>
+    <br>
+    <div class ="form-row">
+  <div class="form-group col-md-6">
+      <img src="https://img.icons8.com/external-photo3ideastudio-gradient-photo3ideastudio/30/000000/external-password-digital-business-photo3ideastudio-gradient-photo3ideastudio.png"/>
+      <label for="inputPassword4">   Confirm Password </label>
       <input type="password" class="form-control" name ="confirm_password" id="inputPassword" placeholder="Confirm Password"><!--type text -->
     </div>
-  <div class="form-group">
-    <label for="inputAddress2">Permanent Address </label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, Road ,or which floor">
+  <div class="form-group col-md-6">
+      <img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/30/000000/external-email-cyber-security-kiranshastry-gradient-kiranshastry-2.png"/>
+    <label for="inputAddress2">Email Address </label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="E-mail Address">
   </div>
-  <div class="form-group">
+    </div>
+    <br>
+    <div class ="form-row">
+  <div class="form-group col-md-6">
+      <img src="https://img.icons8.com/nolan/40/order-delivered.png"/>
     <label for="inputAddress2">Present Address </label>
     <input type="text" class="form-control" id="inputAddress3" placeholder="Apartment, Road ,or which floor">
   </div>
+    <div class="form-group col-md-6">
+        <img src="https://img.icons8.com/nolan/40/order-delivered.png"/>
+        <label for="inputAddress2">Permanent Address </label>
+        <input type="text" class="form-control" id="inputAddress3" placeholder="Apartment, Road ,or which floor">
+    </div>
+    </div>
+    <br>
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputCity">City</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputState">State</label>
-      <input type="text" class="form-control" id="inputState">
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputZip">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
+        <img src="https://img.icons8.com/nolan/30/phone.png"/>
+      <label for="inputCity">Mobile Number</label>
+      <input type="text" class="form-control" id="inputCity" placeholder="Mobile or Telephone">
     </div>
   </div>
- 
   <button type="submit" class="btn btn-primary">Sign in</button>
 </form>
 </div>

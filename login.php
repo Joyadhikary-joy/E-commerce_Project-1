@@ -85,7 +85,7 @@ if(empty($err))// kono error nah thakle
     <title>Joy Ecommerce login system!</title>
   </head>
   <body> <!--bootstrap dark navbar getbootstrap theke pike korsi -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="index.php">Joy Ecommerce</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -95,7 +95,7 @@ if(empty($err))// kono error nah thakle
       <li class="nav-item active">
         <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="register.php">Register</a>
       </li>
       <li class="nav-item">
@@ -110,22 +110,34 @@ if(empty($err))// kono error nah thakle
 
 <div class="container mt-4">
 <h3>Please Login Here</h3>
-<hr>
-
+    <div class="d-flex justify-content-center align-items-center container ">
 <form action="" method="post">
-  <div class="form-group">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class ="form-row">
+  <div class="form-group col-md-15">
+      <img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/30/000000/external-user-interface-kiranshastry-gradient-kiranshastry.png"/>
     <label for="exampleInputEmail1">Username</label>
     <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please Enter Username">
   </div>
-  <div class="form-group">
+    </div>
+    <div class ="form-row">
+  <div class="form-group col-md-15">
+      <img src="https://img.icons8.com/external-photo3ideastudio-gradient-photo3ideastudio/30/000000/external-password-digital-business-photo3ideastudio-gradient-photo3ideastudio.png"/>
     <label for="exampleInputPassword1">Password</label>
     <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Please Enter Password">
   </div>
+    </div>
   <button type="submit" class="btn btn-primary">Submit</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </form>
-
-
-
+    </div>
 </div>
 
     <!-- Optional JavaScript -->
