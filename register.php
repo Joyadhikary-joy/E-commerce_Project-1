@@ -118,7 +118,8 @@ mysqli_close($conn);// database connection close
 
     <title>Joy Ecommerce  Login</title>
   </head>
-  <body>  <!--bootstrap dark navbar getbootstrap theke pike korsi -->
+
+  <body background="bg4.jpg" ;">  <!--bootstrap dark navbar getbootstrap theke pike korsi -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="index.php">Joy Ecommerce </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -128,9 +129,6 @@ mysqli_close($conn);// database connection close
   <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="register.php">Register</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="login.php">Login</a>
@@ -147,13 +145,13 @@ mysqli_close($conn);// database connection close
 
   <!-- start bootstrap , it is pike from getbootstrap-->
 <div class="container mt-4"> <!--top margin 4 -->
-<h3>Please Register Here </h3> 
+    <h3><p class="login-text" style="font-size: 2rem; font-weight: 800;">Please Login Here</p></h3>
 <hr>  <!--hr for line , lower line for h3  --> 
 <form action="" method="post"> <!--action blank and method post kore dice  -->
     <div class="form-row">
     <div class="form-group col-md-6">
         <img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/30/000000/external-user-interface-kiranshastry-gradient-kiranshastry.png"/>
-      <label for="inputEmail4">   Username </label>
+        <label for="inputEmail4">Username</label>
       <input type="text" class="form-control" name="username" id="inputEmail4" placeholder="Username"><!--type text -->
     </div>
     <div class="form-group col-md-6">

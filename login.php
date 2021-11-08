@@ -18,9 +18,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){  // jodi post request pai
     if(empty(trim($_POST['username'])) || empty(trim($_POST['password']))) // jodi username or password empty  thake 
     {
         $err = " Opss !! Please enter username + password";
-        echo "<p align='center'> <font color=red  size='6pt'> Opss !! Please enter the username and  password to log in </font> </p>";
+      // header("location: login3.php");
+        // echo "<p align='center'> <font color=red  size='6pt'> Opss !! Please enter the username and  password to log in </font> </p>";
         //echo " Opss !! Please enter the username and  password to log in  ";
-      //  echo '<script>alert(" Opss !! Please enter the username and  password to log in ")</script>';
+      // echo '<script>alert(" Opss !! Please enter the username and  password to log in ")</script>';
+        header("Location: login.php?error=Please enter username & password");
     }
     else{
         $username = trim($_POST['username']);// set username 
@@ -57,7 +59,9 @@ if(empty($err))// kono error nah thakle
                             
                         }
                         else {
-                          echo "<p align='center'> <font color=red  size='6pt'>Opss !!! Password invalid   </font> </p>";
+                            //header("location: login3.php ");
+                           // echo '<script>alert(" Opss !! password invalid  ")</script>';
+                            header("Location:login.php?error=Incorect User name or password");
                         }
                     }
 
@@ -77,67 +81,38 @@ if(empty($err))// kono error nah thakle
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+
+      <link rel="stylesheet" type="text/css" href="style1.css">
+
     <title>Joy Ecommerce login system!</title>
   </head>
   <body> <!--bootstrap dark navbar getbootstrap theke pike korsi -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.php">Joy Ecommerce</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-  <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="register.php">Register</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="login.php">Login</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="logout.php">Logout</a>
-      </li>
-    </ul>
-  </div>
-</nav>
 
 <div class="container mt-4">
-<h3>Please Login Here</h3>
-    <div class="d-flex justify-content-center align-items-center container ">
-<form action="" method="post">
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class ="form-row">
-  <div class="form-group col-md-15">
-      <img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/30/000000/external-user-interface-kiranshastry-gradient-kiranshastry.png"/>
-    <label for="exampleInputEmail1">Username</label>
+<h3><p class="login-text" style="font-size: 2rem; font-weight: 800;">Please Login Here</p></h3>
+<form action="" method="post"  class="login-email">
+
+    <?php if (isset($_GET['error'])) { ?>
+        <p align='left'> <font color=red  size='4pt'><?php echo $_GET['error']; ?></p>
+    <?php } ?>
+  <div class="input-group">
     <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please Enter Username">
   </div>
-    </div>
-    <div class ="form-row">
-  <div class="form-group col-md-15">
-      <img src="https://img.icons8.com/external-photo3ideastudio-gradient-photo3ideastudio/30/000000/external-password-digital-business-photo3ideastudio-gradient-photo3ideastudio.png"/>
-    <label for="exampleInputPassword1">Password</label>
+  <div class="input-group">
+
     <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Please Enter Password">
   </div>
-    </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-</form>
-    </div>
+  <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+  <div class="input-group">
+      <button name="submit" class="btn">Login</button>
+  </div>
+  <p class="login-register-text">Don't have an account? <a href="register.php">Register Here</a>.</p>
+  </form>
 </div>
 
     <!-- Optional JavaScript -->
