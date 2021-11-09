@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){  // jodi post request pai
         // echo "<p align='center'> <font color=red  size='6pt'> Opss !! Please enter the username and  password to log in </font> </p>";
         //echo " Opss !! Please enter the username and  password to log in  ";
       // echo '<script>alert(" Opss !! Please enter the username and  password to log in ")</script>';
-        header("Location: login.php?error=Please enter username & password");
+        header("Location: login.php?error= Please enter username & password");
     }
     else{
         $username = trim($_POST['username']);// set username 
@@ -61,7 +61,7 @@ if(empty($err))// kono error nah thakle
                         else {
                             //header("location: login3.php ");
                            // echo '<script>alert(" Opss !! password invalid  ")</script>';
-                            header("Location:login.php?error=Incorect User name or password");
+                            header("Location:login.php?error= Incorrect User name or password");
                         }
                     }
 
@@ -98,7 +98,7 @@ if(empty($err))// kono error nah thakle
 <form action="" method="post"  class="login-email">
 
     <?php if (isset($_GET['error'])) { ?>
-        <p align='left'> <font color=red  size='4pt'><?php echo $_GET['error']; ?></p>
+        <p align='left'> <font color=red  size='5pt'><img src="https://img.icons8.com/material-outlined/24/fa314a/error--v1.png"/><?php echo $_GET['error']; ?></p>
     <?php } ?>
   <div class="input-group">
     <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please Enter Username">
@@ -111,7 +111,7 @@ if(empty($err))// kono error nah thakle
   <div class="input-group">
       <button name="submit" class="btn">Login</button>
   </div>
-  <p class="login-register-text">Don't have an account? <a href="register.php">Register Here</a>.</p>
+  <p class="login-register-text">Don't have an account? <a href="register.php">Register Here</a></p>
   </form>
 </div>
 

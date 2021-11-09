@@ -51,10 +51,10 @@
             <ul class="navbar-nav m-auto font-rubik">
                 <!-- nav bar ar margin jate space pai -->
                 <li class="nav-item active">
-                    <a class="nav-link" href="product.php">Products </a> <!-- fas fa for ^ icone-->
+                    <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.php">Home</a>
+                    <a class="nav-link" href="product.php">Products </a> <!-- fas fa for ^ icone-->
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="cart.php">Cart Items</a>

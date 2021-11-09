@@ -10,7 +10,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(bg.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(joy_1.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -21,14 +21,14 @@ body {
 .container {
     width: 400px;
     min-height: 400px;
-    background: #FFF;
+    background: rgb(0 0 0 / 8%);
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,.3);
     padding: 40px 30px;
 }
 
 .container .login-text {
-    color: #111;
+    color: #3dd08c;
     font-weight: 500;
     font-size: 1.1rem;
     text-align: center;
@@ -104,7 +104,7 @@ body {
     padding: 15px 20px;
     font-size: 1rem;
     border-radius: 30px;
-    background: transparent;
+    background: #99b0c9;
     outline: none;
     transition: .3s;
 }
@@ -134,13 +134,13 @@ body {
 }
 
 .login-register-text {
-    color: #111;
+    color:#f1c338;
     font-weight: 600;
 }
 
 .login-register-text a {
     text-decoration: none;
-    color: #6c5ce7;
+    color:#007bff;
 }
 
 @media (max-width: 430px) {
