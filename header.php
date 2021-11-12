@@ -42,7 +42,8 @@
         <p class="font-rale font-size-16 text-black-50 m-0">joy adhikary 18192103062</p>
         <div class="font-rale font-size-14">
             <a href="login.php" class="px-3 border-right border-left text-dark">Login</a>
-            <a href="cart.php" class="px-3 border-right text-dark">Whishlist (0)</a>
+            <a href="cart.php" class="px-3 border-right text-dark">Whishlist</a>
+            <span class="px-3 py-2 rounded-pill text-dark bg-light"><?php echo count($product->getData('wishlist')); ?></span>
         </div>
     </div>
 
@@ -69,6 +70,7 @@
                     <a class="nav-link" href="comingsoon.php">Cooming soon</a>
                 </li>
             </ul>
+
             <!-- curt and shopping icone -->
             <form action="#" class="font-size-14 font-rale">
                 <a href="cart.php" class="py-2 rounded-pill color-primary-bg">

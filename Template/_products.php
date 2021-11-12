@@ -23,7 +23,7 @@ if ($item['item_id'] == $item_id) : // jodi upere item id ar songe ager ta match
                 <img src="<?php echo $item['item_image'] ?? "./assets/products/1.png" ?>" alt="product" class="img-fluid"> <!-- img fluid for responsive image -->
                 <div class="form-row pt-4 font-size-16 font-baloo">
                     <div class="col">
-                        <button type="submit" class="btn btn-danger form-control">Proceed to Buy</button> <!-- btg danger for light red colour-->
+                        <button onclick="location='checkout.php'" type="submit" class="btn btn-danger form-control">Proceed to Buy</button> <!-- btg danger for light red colour-->
                     </div>
                     <div class="col">
                         <form method="post">

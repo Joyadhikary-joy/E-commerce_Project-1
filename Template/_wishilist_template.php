@@ -1,8 +1,8 @@
 <!-- Shopping cart section  -->
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-    if (isset($_POST['delete-cart-submit'])){
-        $deletedrecord = $Cart->deleteCart($_POST['item_id']);
+    if (isset($_POST['delete-wishlist-submit'])){
+        $deletedrecord = $Cart->deletewishlist($_POST['item_id']);
     }
 
     if(isset($_POST['cart-submit'])){
@@ -48,8 +48,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                                 <div class="qty d-flex pt-2">
 
                                     <form method="post">
-                                        <input type="hidden" value="<?php echo $item['item_id'] ?? 0; ?>" name="item_id">
-                                        <button type="submit" name="delete-cart-submit" class="btn font-baloo text-danger pl-0 pr-3 border-right">Delete</button>
+                                        <input type="hidden" value="<?php echo $item['item_id'] ?? 0; ?>" name="item_id">   <!-- input hidden rakhbo ,database ar  item id table  thkee ai selected item delete korbo -->
+                                        <button type="submit" name="delete-wishlist-submit" class="btn font-baloo text-danger px-3 border-right">Delete</button>
                                     </form>
 
                                     <form method="post">
@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
                             <div class="col-sm-2 text-right">
                                 <div class="font-size-20 text-danger font-baloo">
-                                    $<span class="product_price" data-id="<?php echo $item['item_id'] ?? '0'; ?>"><?php echo $item['item_price'] ?? 0; ?></span>
+                                    ৳ <span class="product_price" data-id="<?php echo $item['item_id'] ?? '0'; ?>"><?php echo $item['item_price'] ?? 0; ?></span>
                                 </div>
                             </div>
                         </div>

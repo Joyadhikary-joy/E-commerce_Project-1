@@ -60,6 +60,19 @@ class Cart
         }
     }
 
+    // delete cart item using cart item id
+    // aitake _cart-template theke call korbe id soho
+    public function deletewishlist($item_id = null, $table = 'wishlist'){
+        if($item_id != null){
+            $result = $this->db->con->query("DELETE FROM {$table} WHERE item_id={$item_id}"); // sql query to delete from the table cart
+            if($result){
+                header("Location:" . $_SERVER['PHP_SELF']); // reload page r jonno
+            }
+            return $result;
+        }
+    }
+
+
     // calculate sub total
     public function getSum($arr){
         if(isset($arr)){
@@ -100,3 +113,4 @@ class Cart
 
 
 }
+?>

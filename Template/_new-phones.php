@@ -33,7 +33,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                                 <span><i class="far fa-star"></i></span>
                             </div>
                             <div class="price py-2">
-                                <span>$<?php echo $item['item_price'] ?? '0' ; ?></span> <!-- aitai o akta price print na kore, database theke iteam_price  ar maddome call kore database theke price pass korty parbo ,defalult 0 -->
+                                <span>৳ <?php echo $item['item_price'] ?? '0' ; ?></span> <!-- aitai o akta price print na kore, database theke iteam_price  ar maddome call kore database theke price pass korty parbo ,defalult 0 -->
                             </div>
                             <form method="post">
                                 <input type="hidden" name="item_id" value="<?php echo $item['item_id'] ?? '1'; ?>">

@@ -35,7 +35,6 @@
 
 </head>
 
-<body>
 
 <!-- start #header section-->
 <header id="header">
@@ -90,6 +89,7 @@
 
 </header>
 <!-- end #header section -->
+<body>
 
 <section class="team-section">
     <div class="container">
@@ -110,7 +110,7 @@
                             <div class="social-links">
                                 <a href="https://www.facebook.com/JOY.ADHIKARY.071" target="_blank"><span class="fa fa-facebook"></span></a>
                                 <a href=""><span class="fa fa-twitter"></span></a>
-                                <a href=""><span class="fa fa-instagram"></span></a>
+                                <a href="https://www.instagram.com/"><span class="fa fa-instagram"></span></a>
                                 <a href="https://www.linkedin.cn/in/joy-adhikary-7b44461b7/"><span class="fa fa-linkedin"></span></a>
                             </div>
                         </div>

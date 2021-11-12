@@ -6,11 +6,14 @@ ob_start();
 include ('header.php');
 ?>
 
+
 <?php
 
 /*  include banner area  */
 include ('Template/_banner-area.php');
 /*  include banner area  */
+
+//include ('template/search.php');
 
 /*  include top sale section */
 include ('Template/_top-sale.php');

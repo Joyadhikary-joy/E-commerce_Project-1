@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){ // post request paile aitai dukhbe
     if(empty(trim($_POST["username"]))){
         $username_err = "Opss Username can not be blank"; // jodi user name empty thake then aita print korbe
        // echo "<p align='center'> <font color=red  size='6pt'> Opss!! Username can not be blank   </font> </p>";
-        echo '<script>alert("Opss!! Username can not be blank ")</script>';
+        echo '<script>alert("WOpss!! Username can not be blank ")</script>';
 
     }
     else{

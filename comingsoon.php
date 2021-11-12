@@ -36,7 +36,7 @@
         <p class="font-rale font-size-16 text-black-50 m-0">joy adhikary 18192103062</p>
         <div class="font-rale font-size-14">
             <a href="#" class="px-3 border-right border-left text-dark">Login</a>
-            <a href="#" class="px-3 border-right text-dark">Whishlist (0)</a>
+            <a href="#" class="px-3 border-right text-dark">Whishlist</a>
         </div>
     </div>
 
