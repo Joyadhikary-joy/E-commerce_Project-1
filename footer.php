@@ -6,8 +6,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-12"> <!-- it will make 3 coloum space we do it bcz bootstrap has 12 coloum space  -->
-                <h4 class="font-rubik font-size-20">Joy Ecommarce Site</h4>
-                <p class="font-size-14 font-rale text-white-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, deserunt.</p>
+                <h4 class="font-rubik font-size-20">Mobi-Freak</h4>
+                <p class="font-size-14 font-rale text-white-50">Discover the innovative world of Mobi-freak and shop everything  iPhone,Samsung,Xiaomi,1+ and many other</p>
             </div>
             <div class="col-lg-4 col-12"> <!-- it will make 4 coloum space we do it bcz bootstrap has 12 coloum space  col 12 for responsive  -->
                 <h4 class="font-rubik font-size-20">Newslatter</h4>
@@ -42,7 +42,7 @@
     </div>
 </footer>
 <div class="copyright text-center bg-dark text-white py-2"> <!-- custom class , bg dark colour , text center a thakbe , text white hobe -->
-    <p class="font-rale font-size-15">&copy; Copyrights 2021. Desing By <a href="#" class="color-first">Joy Adhikary</a></p>
+    <p class="font-rale font-size-15">&copy; Copyrights 2021. Design By <a href="#" class="color-first">Joy Adhikary</a></p>
 </div>
 
 

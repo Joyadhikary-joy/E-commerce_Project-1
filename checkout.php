@@ -179,25 +179,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                 <br>
                     <hr class="mb-3">
                     <h4 class="mb-3">Payment Methods</h4>
-                    <div class="d-block my-3">
-                        <div class="custom-control custom-radio">
-                            <input id="Bikash" name="paymentMethod1" type="radio" class="custom-control-input"  required="">
-                            <label class="custom-control-label" for="Bikash">Bikash</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input id="Nagad" name="paymentMethod1" type="radio" class="custom-control-input" required="">
-                            <label class="custom-control-label" for="Nagad">Nagad</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input id="Rocket" name="paymentMethod1" type="radio" class="custom-control-input" required="">
-                            <label class="custom-control-label" for="Rocket">Debit or credit card </label>
-                        </div>
-                    </div>
+
                 <button type="button" class="btn btn-outline-warning btn-lg"><a href="https://docs.google.com/forms/d/e/1FAIpQLScuFhBCHu3PoY7nPALgOxU8TxevgSYtVed54wVaECNoYBRbqA/viewform?usp=sf_link">BKASH PAY</a></button>
                 <button type="button" class="btn btn-outline-light btn-lg"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeJESAPH6WdKkQP97xHLES4dNnjeDzNoJ4wsheGcUO971qTlg/viewform?usp=sf_link">NAGAD PAY</a></button>
                 <button type="button" class="btn btn-outline-secondary btn-lg">CARDS PAY</button>
                 <hr class="mb-4">
-                <button class="btn btn-primary btn-lg btn-block" type="submit"> <a href="goodbye.php" >Continue to checkout</a></button>
+                <button class="btn btn-primary btn-lg btn-block" type="submit"><a href="goodbye.php" >Continue to checkout</a></button>
             </form>
         </div>
     </div>
